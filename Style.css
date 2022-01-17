@@ -1,0 +1,179 @@
+body{
+    padding-left:40px ;
+    padding-right:40px ;
+}
+
+
+/******************** Nav bar *******************************/
+
+#List{
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+#float{
+    float:left;
+}
+
+
+#float a{
+    display: block;
+    color: rgb(243, 240, 240);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+#float a:hover{
+    background-color: #d44912
+}
+.right{
+    float: right;
+}
+.right a.active{
+    background-color: #04AA6D;
+    color: white;
+
+}
+/*************************Head***********************************/
+
+.leftside,.rightside{
+    height: 100vx;
+    width: 100%;
+}
+.headpic{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 30px;
+    width:"500" ;height:"600";
+    border: black;
+
+}
+.rightside{
+    padding-right: 100px;
+    padding-top: 40px;
+    text-align: center;
+}
+.decor{
+    margin-right: 100px;
+    padding-top: 10px;
+    background-color: rgb(117, 209, 117);
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+
+/**************************About***************************************/
+.one{
+    padding-top:10px ;
+    padding-left:10px ;
+    background: #9d9d9d7c ;
+    border-radius: 15px; 
+    font-size: 16px;
+  }
+  .one .text-center{
+    padding-bottom: 30px;
+  }
+  .one p{
+    text-align:justify;
+    color:black;
+  }
+  .one h3{
+    color:rgb(225, 240, 227);
+  
+  }
+  .one a{
+    text-decoration: none;
+    color: black;
+  }
+
+/************************Education*************************************/
+
+.table{
+    background-color: rgba(187, 167, 182, 0.432);
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+
+/****************************project********************************/
+.row{
+    height: auto;
+    width: auto;
+    display: flex;
+    color: rgb(245, 240, 240);
+    padding-left: 20px;
+    padding-right: 10px;
+    text-align: center;
+}
+#proj1{
+    background-color: rgb(143, 9, 36);
+    border-radius: 10px;
+   
+}
+#proj2{
+    background-color: rgb(5, 27, 68);
+    border-radius: 10px;
+    
+}
+#proj3{
+    background-color: rgb(14, 172, 14);
+    border-radius: 10px;
+    
+}
+.para{
+    padding-bottom: 5px;
+}
+
+/************************Skills*********************************/
+.dropdown-menu{
+    color: rgb(247, 11, 11);
+   
+}
+#area1,#area2,#area3,#area4{
+    padding:5px;
+    color: green;
+}
+#skill1,#skill2,#skill3,#skill4{
+    cursor: pointer;
+    background-color: rgba(104, 77, 77, 0.212);
+    font-size: 20px;
+    padding:10px;
+    border-radius: 10px;
+}
+
+/*************************contact*******************************/
+#Contact{
+    padding-left: 10px;
+    padding-top: 10px;
+    border:1px solid;
+    font-size: 16px;
+    background-color: rgba(187, 186, 136, 0.411);
+    color: black;
+    border-radius: 10px;
+}
+
+
+/************************ footer *******************************/
+#footer{
+    background-color: #fff;
+    text-align: center;
+    padding: 5% 15%;
+  
+  }
+  #footer i{
+    /* margin:2%; */
+    padding: 1%;
+  }
+  #footer p{
+    font-family: "Montserrat-light";
+    color: #abb6ad;
+  }
+  #footer a{
+    color:rgb(152, 159, 135);
+  }
+  #footer a:hover{
+    color:rgb(230, 22, 144);
+  }

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Portfolio</title>
+
+    <!--------------------Dropdown link-------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./app.js"> </script>
+</head>
+<body>
+    <!------------------Nav section-------------------------------->
+    <section>
+        <div class="bar">
+            <nav>
+                <ul id="List">
+                    <div class="right">
+                        <li  id="float"> <a class="active" href="#Head ">Home</a> </li>
+                        <li id="float"> <a href="#About ">About</a> </li>
+                        <li id="float"> <a href="#Education ">Education</a> </li>
+                        <li id="float"> <a href="#Skills ">Skills</a> </li>
+                        <li id="float"> <a href="#Projects ">Projects</a> </li>
+                        <li id="float"> <a href="#Contact">Contact</a> </li>
+                        </div>  
+                </ul>
+            </nav>  
+        </div>
+
+    </section>
+
+    <!---------------Head section----------------------------------->
+    <section id="Head">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="leftside">
+                    <img class="headpic" src="images/Home.jfif" alt="Profile picture" >
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="rightside">
+                    <h1 style="color: black;">Tim Berners-Lee</h1>
+                    <p style="color: black;"> Founder of HTML</p>   
+                    <span class="decor"><marquee direction="right" >Email:Arjun@cognizant.com || Contact number:9876543210  </marquee></span>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!---------------About section-------------------------------->
+    <section id="About">
+        <h1>About</h1>
+        <div class="container-fluid one">
+        <p>I am professional YYYY. I am from India. 
+             I am very thin but strong guy. <br/>
+              Click the button to my <button><a href="https://en.wikipedia.org/w/index.php?title=Tim_Berners-Lee&action=edit">professional details</a></button>.<br/> I am ambious to my goals.
+         Strive hard to achive it.   </p>
+        </div>
+
+    </section>
+    <!--------------Educational Details--------------------------->
+    <section id="Education">
+        <h1>Educational Details</h1>
+        <div class="container-fluid"></div>
+            <table class="table table-bordered" >
+               <thead >
+                    <tr class="head1"> 
+                            <th>S.No</th>
+                            <th>Course</th>
+                            <th>Name of Institute </th>
+                            <th>Duration</th>
+                            <th>Aggregate</th>
+ 
+                    </tr>
+                </thead>    
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>B tech</td>
+                        <td>Indian Institute</td>
+                        <td>4 Years</td>
+                        <td id="score1"><button onclick="retriveScore(0,'score1')"> Click here</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Intermediate</td>
+                        <td>Telangana College</td>
+                        <td>2 Years</td>
+                        <td id="score2"><button onclick="retriveScore(1,'score2')"> Click here</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>SSC</td>
+                        <td>Indian School</td>
+                        <td>1 Years</td>
+                        <td id="score3"><button onclick="retriveScore(2,'score3')"> Click here</button></td>
+                    </tr>
+                </tbody>
+            
+            </table>
+        </div>      
+    </section>
+      
+    <!------------------------------------------Skills------------------------------------------------->
+    <section id="Skills">
+        <h1>Technical Stack</h1>
+        <div class="col">
+            <div class="row-lg-4" id="skill1">
+                <p  onclick="clicking(0,'area1')">Programming Languages</p>     
+            </div>
+            <div >
+                <div id="area1"></div>
+            </div>
+            <div class="row-lg-4" id="skill2">
+                <p  onclick="clicking(1,'area2')">Web Technologies</p>
+            </div>
+            <div >
+                <div id="area2"></div>
+            </div>
+            <div class="row-lg-4" id="skill3">
+                <p  onclick="clicking(2,'area3')">Communication Languages</p>
+            </div>
+            <div >
+                <div id="area3"></div>
+            </div>
+            <div class="row-lg-4" id="skill4">
+                <p onclick="clicking(3,'area4')">Database Stack</p>
+            </div>
+            <div >
+                <div id="area4"></div>
+            </div>
+        </div>
+        
+        
+        
+      
+      
+        <!-- <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Programming Skills</button>
+            <ul class="dropdown-menu">
+                <li>Java</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>PHP</li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Web Technologies</button>
+            <ul class="dropdown-menu">
+                <li>Angular</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Communication Languages</button>
+            <ul class="dropdown-menu">
+                <li>English</li>
+                <li>Hindi</li>
+                <li>Telugu</li>
+            </ul>    
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Query Languages</button>
+            <ul class="dropdown-menu">
+                <li>SQL</li>
+                <li>Oracle</li>
+                <li>Mysql</li>
+            </ul>
+        </div> -->
+    </section>
+    
+
+   
+
+
+    <!----------------------------------------Projects ------------------------------------------------>
+    <section id="Projects" >
+        <h1>Projects</h1>
+        <div class="row">
+            <div class="col-lg-4" id="proj1">
+                <h2>Collage Admission Page(Using Java(J2EE))</h2>
+                <h3>Cognizant</h3>
+                <p>Using enterprice java, we have developed tool for collage admissions login page.This is used for maintaining Candidate details records.
+                    This provides excellent system for quick access and maintain systamatic records.
+                </p>
+            </div>
+            <div >&nbsp;</div>
+            <div class="col-lg-4" id="proj2">
+                <h2>Inter Admission Page(Using Python)</h2>
+                <h3>Cognizant</h3>
+                <p class="para">Using python, we have developed tool for collage admissions login page.This is used for maintaining Candidate details records.
+                    This provides excellent system for quick access and maintain systamatic records.
+                </p>
+            </div>
+            <div >&nbsp;</div>
+            <div class="col-lg-4" id="proj3">
+                <h2>School Admission Page(Using Web Design)</h2>
+                <h3>Cognizant</h3>
+                <p>Using Web technologies, we have developed tool for collage admissions login page.This is used for maintaining Candidate details records.
+                    This provides excellent system for quick access and maintain systamatic records.
+                </p>
+            </div>
+        </div>
+    </section>
+
+<br/>
+
+<!-----------------------------------------------Contact--------------------------------------------------->
+
+<section >
+    <h1>Contact</h1>
+    <div class="col">
+        <div class="row-lg-4" id="Contact">
+            <p>For any Further Help</p>
+            <p>Tim Berners-Lee</p>
+            <p>Email:Lee@cognizant.com</p>
+            <p>Number:9876543210</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+<!----------------------------------------------Footer----------------------------------------------------->
+<footer id="footer">
+
+    <a href="https://twitter.com/?lang=en" title="Twitter"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://linked.in/" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.google.com/gmail/" title="Gmail"><i class="fa fa-envelope"></i></a>
+    <a href="https://github.com/" title="Git hub"><i class="fa fa-github" aria-hidden="true" ></i></a>
+    
+    <p>&copy Copyright 2021 Lee</p>
+
+  </footer>
